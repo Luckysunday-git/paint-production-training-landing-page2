@@ -5,6 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="digital hub.jpg" />
     <title>Paint Training Landing Page2</title>
+
+    <!-- ✅ Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1108742851422739");
+      fbq("track", "PageView"); // Track landing page views
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1108742851422739&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- ✅ End Meta Pixel Code -->
+
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -196,7 +235,12 @@
     <!-- Navbar -->
     <nav>
       <h1>Paint Production</h1>
-      <a href="join-whatsapp.html" class="nav-btn">Join Now</a>
+      <a
+        href="join-whatsapp.html"
+        class="nav-btn"
+        onclick="fbq('track', 'Lead')"
+        >Join Now</a
+      >
     </nav>
 
     <!-- Hero Section -->
@@ -208,7 +252,9 @@
           beginner-friendly training program. Gain practical skills and join a
           supportive learning community for free.
         </p>
-        <a href="join-whatsapp.html" class="cta">Join Now</a>
+        <a href="join-whatsapp.html" class="cta" onclick="fbq('track', 'Lead')"
+          >Join Now</a
+        >
         <div class="more-info">
           <small>Join others in the WhatsApp group for more info</small>
         </div>
@@ -239,8 +285,8 @@
         <div class="feature">
           <h4>Satin Paint</h4>
           <p>
-            A semi-gloss paint with a soft sheen, suitable for areas like
-            bedrooms and offices that need elegance.
+            A semi-gloss paint with a soft sheen, suitable for bedrooms and
+            offices that need elegance.
           </p>
         </div>
         <div class="feature">
@@ -267,7 +313,9 @@
 
         <div class="ready">
           <h3>Ready to Start Producing?</h3>
-          <a href="join-whatsapp.html">Join Now</a>
+          <a href="join-whatsapp.html" onclick="fbq('track', 'Lead')"
+            >Join Now</a
+          >
         </div>
       </div>
     </section>
@@ -300,7 +348,9 @@
 
         <div class="ready">
           <h3>Ready to Start Learning?</h3>
-          <a href="join-whatsapp.html">Join Now</a>
+          <a href="join-whatsapp.html" onclick="fbq('track', 'Lead')"
+            >Join Now</a
+          >
         </div>
       </div>
       <small>Join others in the WhatsApp group for more info</small>
@@ -335,7 +385,7 @@
     <!-- Footer Call to Action -->
     <footer>
       <h3>Ready to Start Producing?</h3>
-      <a href="join-whatsapp.html">Join Now</a>
+      <a href="join-whatsapp.html" onclick="fbq('track', 'Lead')">Join Now</a>
     </footer>
   </body>
 </html>
